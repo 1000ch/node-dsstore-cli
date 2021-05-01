@@ -2,31 +2,41 @@
   "name": "dsstore-cli",
   "version": "1.0.0",
   "description": "Command line interface for dsstore",
-  "bin": {
-    "dsstore": "cli.js"
-  },
-  "repository": "1000ch/node-dsstore-cli",
-  "files": [
-    "cli.js",
-    "usage.txt"
-  ],
   "keywords": [
     "dsstore"
   ],
+  "homepage": "https://github.com/1000ch/node-dsstore#readme",
+  "bugs": {
+    "url": "https://github.com/1000ch/node-dsstore/issues"
+  },
+  "repository": "1000ch/node-dsstore-cli",
+  "license": "MIT",
   "author": {
     "name": "Shogo Sensui",
     "email": "shogosensui@gmail.com",
     "web": "https://github.com/1000ch"
   },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/1000ch/node-dsstore/issues"
+  "type": "module",
+  "bin": {
+    "dsstore": "cli.js"
   },
-  "homepage": "https://github.com/1000ch/node-dsstore#readme",
+  "files": [
+    "cli.js",
+    "usage.txt"
+  ],
+  "scripts": {
+    "test": "xo"
+  },
+  "xo": {
+    "space": 2
+  },
   "dependencies": {
-    "dsstore": "^1.0.1",
+    "dsstore": "^2.0.0",
     "minimist": "^1.2.0",
     "ora": "^5.0.0"
+  },
+  "devDependencies": {
+    "xo": "^0.39.1"
   },
   "engines": {
     "node": ">=12"
