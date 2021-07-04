@@ -1,6 +1,6 @@
 {
   "name": "dsstore-cli",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Command line interface for dsstore",
   "keywords": [
     "dsstore"
