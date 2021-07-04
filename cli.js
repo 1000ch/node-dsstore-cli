@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import fs from 'fs/promises';
-import path from 'path';
+import {promises as fs} from 'node:fs';
+import path from 'node:path';
 import minimist from 'minimist';
 import ora from 'ora';
 import dsstore from 'dsstore';
