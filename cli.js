@@ -1,6 +1,7 @@
 #!/usr/bin/env node
-import {promises as fs} from 'node:fs';
+import fs from 'node:fs/promises';
 import path from 'node:path';
+import process from 'node:process';
 import minimist from 'minimist';
 import ora from 'ora';
 import dsstore from 'dsstore';
@@ -11,19 +12,20 @@ import dsstore from 'dsstore';
       alias: {
         v: 'version',
         h: 'help',
-        s: 'silent'
-      }
+        s: 'silent',
+      },
     });
 
     if (argv.v || argv.version) {
-      const data = await fs.readFile(new URL('package.json', import.meta.url));
+      const data = await fs.readFile(new URL('package.json', import.meta.url), 'utf8');
       const pkg = JSON.parse(data);
       console.log(pkg.version);
+      process.exit(0);
     }
 
     if (argv.h || argv.help) {
-      const data = await fs.readFile(new URL('usage.txt', import.meta.url));
-      console.log(data.toString());
+      const data = await fs.readFile(new URL('usage.txt', import.meta.url), 'utf8');
+      console.log(data);
       process.exit(0);
     }
 
