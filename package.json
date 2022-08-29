@@ -37,7 +37,7 @@
     "ora": "^6.0.0"
   },
   "devDependencies": {
-    "xo": "^0.47.0"
+    "xo": "^0.52.2"
   },
   "engines": {
     "node": ">=14"
