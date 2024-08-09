@@ -1,4 +1,4 @@
-# dsstore-cli ![GitHub Actions Status](https://github.com/1000ch/node-dsstore-cli/workflows/test/badge.svg?branch=main)
+# dsstore-cli ![GitHub Actions Status](https://github.com/1000ch/node-dsstore-cli/actions/workflows/test.yml/badge.svg)
 
 Command line interface for [dsstore](https://github.com/1000ch/node-dsstore).
 

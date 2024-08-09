@@ -32,14 +32,14 @@
     "space": 2
   },
   "dependencies": {
-    "dsstore": "^3.1.0",
+    "dsstore": "^4.0.0",
     "minimist": "^1.2.0",
     "ora": "^6.0.0"
   },
   "devDependencies": {
-    "xo": "^0.47.0"
+    "xo": "^0.59.3"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=22"
   }
 }
