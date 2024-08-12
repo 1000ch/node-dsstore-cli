@@ -34,7 +34,7 @@
   "dependencies": {
     "dsstore": "^4.0.0",
     "minimist": "^1.2.0",
-    "ora": "^6.0.0"
+    "ora": "^8.0.1"
   },
   "devDependencies": {
     "xo": "^0.59.3"
